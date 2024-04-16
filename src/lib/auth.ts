@@ -19,7 +19,7 @@ const getGoogleCredentials =()=>{
 }
 
 export const authOptions: NextAuthOptions = {
-    adapter: UpstashRedisAdapter(db),
+    adapter: UpstashRedisAdapter(db),//automatically update the database with the credentials
     session:{
         strategy:'jwt',
     },
